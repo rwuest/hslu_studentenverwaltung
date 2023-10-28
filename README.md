@@ -1,24 +1,29 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Create new Rails application
 
-Things you may want to cover:
+## Prerequisits
 
-* Ruby version
+* Install Ruby 3.1.2 with rvm (https://rvm.io/)
+* Update bundler --> gem update bundler
+* Install rails over gem --> gem install rails
 
-* System dependencies
+## Create Rails Project
 
-* Configuration
+* rails new studentenverwaltung
+* cd studentenverwaltung
+* bin/rails generate scaffold Student name:string adresse:string plz:integer ort:string
+email:string phone:string 
+* bin/rails db:migrate
+* add root "students#index" to config/routes.rb
 
-* Database creation
+## Add Material Design to Project
+* add gem 'materialize-sass' and gem "sassc-rails" to Gemfile
+* bundler install
+* change app/assets/stylesheets/application.css to app/assets/stylesheets/application.scss
+* add  @import "materialize"; to app/assets/stylesheets/application.scss
 
-* Database initialization
+## Start Webapp
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* cd studentenverwaltung; bin/rails server
+* Open webbrowser --> https://localhost:3000
