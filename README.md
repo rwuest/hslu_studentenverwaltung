@@ -4,7 +4,7 @@
 
 ## Prerequisits
 
-* Install Ruby 3.1.2 with rvm (https://rvm.io/)
+* Install Ruby 3.2.2 with rvm (https://rvm.io/)
 * Update bundler --> gem update bundler
 * Install rails over gem --> gem install rails
 
@@ -27,3 +27,12 @@ email:string phone:string
 
 * cd studentenverwaltung; bin/rails server
 * Open webbrowser --> https://localhost:3000
+
+## Run the application
+
+*  Clone this Project
+*  cd studentenverwaltung
+*  bundler install --path=vendor/bundle
+*  bin/rails db:migrate
+*  bin/rails server
+*  Open webbrowser --> https://localhost:3000
